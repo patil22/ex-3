@@ -1,0 +1,119 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+
+}
+html{
+    font-size: 105.5%;
+}
+.row{
+    margin: 0px;
+}
+h1{
+    color: rgb(0, 255, 34);
+}
+
+.nav-link{
+    position: relative;
+    left: 790px;
+}
+    .main_menu{
+        background-color: var( --main-bg);
+    }
+.navbar{
+    color: #ecdfdf ;
+    background-color: var( --main-bg);
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 5px;
+}
+.navbar a:hover{
+    color: rgb(29, 158, 245);
+}
+.navbar-toggler{
+    background-color: grey;
+}
+.main_header_left{
+    height: 20rem;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_right h1{
+     font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+.main_header_right{
+    height: 25rem;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_left .text_clr{
+    color: var(--main-color);
+
+}
+.main_header_left button{
+    border:none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px black;
+}
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px rgb(19, 93, 231);
+}
+/* footer  */
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+    
+}
+footer p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 1.4rem;
+
+} 
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* responsive code  */
+@media (max-width: 768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem;
+    }
+}
+.main_header_right figure img{
+    filter: drop-shadow(0 0.5rem 1rem rbga(0,0,0,0.3));
+}
